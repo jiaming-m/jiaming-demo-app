@@ -9,3 +9,7 @@ Layout:
 - `lib/` shared helpers.
 
 Tunnel probe 1
+
+## Contributing
+
+Open a PR against main.
