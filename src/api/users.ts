@@ -1,3 +1,4 @@
+// Custom automation trigger E2E: API-path match.
 export type User = {
   id: string;
   email: string;
