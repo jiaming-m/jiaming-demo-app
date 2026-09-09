@@ -1,4 +1,3 @@
-// Custom automation trigger E2E: nonmatching web path.
 import { listUsers } from '../api/users';
 
 export async function renderUserTable(): Promise<string> {
