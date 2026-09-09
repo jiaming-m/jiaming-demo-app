@@ -4,7 +4,7 @@ export type User = {
   createdAt: string;
 };
 
-export async function listUsers(limit = 25): Promise<User[]> {
+export async function listUsers(limit = 50): Promise<User[]> {
   return fetchJson(`/v1/users?limit=${limit}`);
 }
 
