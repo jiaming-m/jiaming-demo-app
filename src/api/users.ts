@@ -5,7 +5,7 @@ export type User = {
 };
 
 /** List users, optionally filtering by an exact email address. */
-export async function listUsers(limit = 25, email?: string): Promise<User[]> {
+export async function listUsers(limit = 20, email?: string): Promise<User[]> {
   const params = new URLSearchParams({ limit: String(limit) });
   if (email) params.set('email', email);
   return fetchJson(`/v1/users?${params.toString()}`);
