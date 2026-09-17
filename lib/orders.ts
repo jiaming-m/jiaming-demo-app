@@ -5,8 +5,8 @@ export type Order = {
   status: 'pending' | 'paid' | 'refunded';
 };
 
-export async function listOrders(userId: string): Promise<Order[]> {
-  const response = await fetch(`/v1/users/${userId}/orders`);
+export async function listOrders(userId: string, limit = 25): Promise<Order[]> {
+  const response = await fetch(`/v1/users/${userId}/orders?limit=${limit}`);
   if (!response.ok) throw new Error(`Request failed: ${response.status}`);
   return response.json() as Promise<Order[]>;
 }
