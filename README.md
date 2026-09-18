@@ -13,3 +13,5 @@ Tunnel probe 1
 ## Contributing
 
 Open a PR against main.
+
+Production trigger E2E: README-only change must not match `src/api/**`.
