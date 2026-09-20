@@ -5,9 +5,10 @@ export type User = {
 };
 
 /** List users, optionally filtering by an exact email address. */
-export async function listUsers(limit = 55, email?: string): Promise<User[]> {
+export async function listUsers(limit = 55, email?: string, status?: 'active' | 'inactive'): Promise<User[]> {
   const params = new URLSearchParams({ limit: String(limit) });
   if (email) params.set('email', email);
+  if (status) params.set('status', status);
   return fetchJson(`/v1/users?${params.toString()}`);
 }
 
