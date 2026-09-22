@@ -1,0 +1,3 @@
+# Merge test
+
+Original documentation.
