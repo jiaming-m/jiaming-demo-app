@@ -1,3 +1,3 @@
 # Merge test
 
-Original documentation.
+Document the new retry behavior.
